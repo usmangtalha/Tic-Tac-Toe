@@ -122,6 +122,8 @@ body{
     .box{
         height: 28vmin;
         width: 28vmin;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
 
     .title{
