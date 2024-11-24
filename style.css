@@ -7,7 +7,7 @@
 }
 
 body{
-    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/Tic-Toe-Toe/asset/bg.jpg') no-repeat;
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('bg.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -103,7 +103,7 @@ body{
 
 @media screen and (max-width:600px){
     body{
-        background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/Tic-Toe-Toe/asset/bg-p.jpg') no-repeat;
+        background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('bg-p.jpg') no-repeat;
         background-size: cover;
         background-position: center;        
     }
