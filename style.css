@@ -11,7 +11,7 @@ body{
     text-align: center;
 }
 
-#title{
+.title{
     padding-top: 2.5rem;
     font-size: 4rem;
 }
@@ -45,7 +45,7 @@ body{
     cursor: pointer;
 }
 
-#reset-btn{
+.reset-btn{
     padding: 1rem;
     font-size: 1.25rem;
     background-color: #06d6a0;
@@ -55,7 +55,7 @@ body{
     cursor: pointer
 }
 
-#new-btn{
+.new-btn{
     padding: 1rem;
     font-size: 1.25rem;
     background-color: #06d6a0;
@@ -95,4 +95,41 @@ body{
 #noscroll{
     overflow: hidden;
     height: 100vh;
+}
+
+@media screen and (max-width:600px){
+    .container{
+        height: 60vh;
+    }
+
+    .game{
+        height: 90vmin;
+        width: 90vmin;
+        gap: 1.5vmin;
+    }
+
+    .box{
+        height: 28vmin;
+        width: 28vmin;
+    }
+
+    .title{
+        padding-top: 8rem;
+        font-size: 3.5rem;
+    }
+
+    .msg-container{
+        height: 100vh;
+    }
+
+    .reset-btn{
+        padding: 1.25rem;
+        font-size: 1.75rem;
+        
+    }
+
+    .new-btn{
+        padding: 1.5rem;
+        font-size: 1.75rem;
+    }
 }
