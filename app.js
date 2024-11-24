@@ -1,5 +1,5 @@
-let body = document.querySelector("body");
 let boxes = document.querySelectorAll(".box");
+let body = document.querySelector("body")
 let resetBtn = document.querySelector(".reset-btn");
 let newGamebtn = document.querySelector(".new-btn");
 let msgContainer = document.querySelector(".msg-container");
@@ -26,7 +26,7 @@ const resetGame = () =>{
     count = 0;
     enableBox();
     msgContainer.classList.add("hide");
-    body.classList.remove("noscroll");
+    body.classList.add("noscroll");
 };
 
 boxes.forEach((box) => {
@@ -34,12 +34,12 @@ boxes.forEach((box) => {
         if(turnO){
             //PlayerO
             box.innerHTML = "O";
-            box.style.color = '#5E239D';
+            box.style.color = '#FFFFFF';
             turnO = false;
         }else{
             //PlayerX
             box.innerHTML = "X";
-            box.style.color = '#F61067';
+            box.style.color = '#F87060';
             turnO = true;
         }
         box.disabled = true;
@@ -58,6 +58,7 @@ const gameDraw = () => {
     msg.style.color = '#FF312E';
     msgWD.innerText = `DRAW!`;
     msgContainer.classList.remove("hide");
+    body.classList.add("noscroll");
     disableBox();
 };
 
@@ -76,11 +77,15 @@ const enableBox = () =>{
 
 const showWinner = (winner) => {
     msg.innerText = `${winner}`;
-    msg.style.color = '#32A287';
+    if(winner === "O"){
+        msg.style.color = '#FFFFFF';
+    }else{
+        msg.style.color = '#F87060';
+    }
     msgWD.innerText = `Winner!`;
     msgContainer.classList.remove("hide");
-    disableBox();
     body.classList.add("noscroll");
+    disableBox();
 };
 
 const checkWinner = () => {
